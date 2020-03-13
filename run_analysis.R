@@ -1,17 +1,18 @@
-#download and load the data
+#################### download and load the data (not part of the script)
+# 
+# myurl = "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+# 
+# # create folder and load data (if not already exist)
+# if (!file.exists("UCI HAR Dataset")){
+#     dir.create("UCI HAR Dataset")    }
+# 
+# if (!file.exists("./UCI HAR Dataset/zipfile.zip")) {
+#     download.file(myurl, "./UCI HAR Dataset/zipfile.zip",method = "curl");
+#     unzip("./UCI HAR Dataset/zipfile.zip")}
+# 
 
-myurl = "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
-# create folder and load data (if not already exist)
-if (!file.exists("UCI HAR Dataset")){
-    dir.create("UCI HAR Dataset")    }
-
-if (!file.exists("./UCI HAR Dataset/zipfile.zip")) {
-    download.file(myurl, "./UCI HAR Dataset/zipfile.zip",method = "curl");
-    unzip("./UCI HAR Dataset/zipfile.zip")}
-
-
-#load data
+#load data (included in the script as I use quite a lot of the files)
 test <-  read.table("./UCI HAR Dataset/test/X_test.txt")
 train <- read.table("./UCI HAR Dataset/train/X_train.txt")
 
