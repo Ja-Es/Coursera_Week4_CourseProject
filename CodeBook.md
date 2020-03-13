@@ -7,7 +7,7 @@ output: html_document
 
 This code book describes the variables, the data, and any transformations or work that was performed to clean up the data.
 
-## Original data set
+## Original data set 
 
 The original data was downloaded from
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
